@@ -1,5 +1,20 @@
+@font-face {
+    font-family: 'KyoboHand';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Uiyeun';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105@1.1/Uiyeun.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
+    font-family: 'Uiyeun';
 }
 
 ul {
@@ -31,7 +46,7 @@ body {
 .header {
     height: 48px;
     padding: 8px;
-    font-size: 24px;
+    font-size: 35px;
     border-radius: 20px 20px 0 0;
     background: rgb(224,168,210);
     background: linear-gradient(156deg, rgba(224,168,210,1) 31%, rgba(134,201,214,1) 72%);
@@ -49,6 +64,7 @@ body {
 .done {
     display: flex;
     margin: 0 0 0 20px;
+    font-size: 28px;
 }
 
 .all {
@@ -64,6 +80,7 @@ body {
 .done__done {
     cursor: pointer;
     display: inline-block;
+    color: rgb(82, 82, 82);
     padding: 5px 10px;
     border-radius: 4px;
 }
@@ -72,6 +89,7 @@ body {
     max-width: 340px;
     margin: 5px auto;
     height: 30px;
+    font-size: 28px;
     line-height: 30px;
     text-align: end;
     margin-right: 30px;
@@ -80,6 +98,7 @@ body {
 
 .select__modify {
     display: inline-block;
+    color: rgb(82, 82, 82);
     cursor: pointer;
     transition: transform 100ms ease;
 }
@@ -88,6 +107,7 @@ body {
 .select__del {
     margin-left: 10px;
     display: inline-block;
+    color: rgb(82, 82, 82);
     cursor: pointer;
     transition: transform 100ms ease;
     display: none;
@@ -117,6 +137,10 @@ body {
 .item__name {
     display: block;
     max-width: 250px;
+    /* font-family: 'KyoboHand'; */
+    font-family: 'Uiyeun';
+    font-size: 22px;
+    color: rgb(82, 82, 82);
     word-wrap: break-word;
     text-align: start;
     cursor: pointer;

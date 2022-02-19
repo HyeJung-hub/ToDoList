@@ -134,8 +134,8 @@ function createItem(text) {
         }
         else if (span.style.textDecoration === 'line-through') {
             span.style.textDecoration = 'none';
-            span.style.color = 'black';
-            checkBtn.style.color = 'black';
+            span.style.color = 'rgb(82, 82, 82)';
+            checkBtn.style.color = 'rgb(82, 82, 82)';
             const tt = JSON.parse(localStorage.getItem(checkBox.id));
             const t = tt.text;
             const c = false;
@@ -225,9 +225,9 @@ function onAll() {
     const row = document.querySelectorAll('.items__row');
     all.style.color = 'rgb(224,168,210)';
     all.style.fontWeight = 'bold';
-    undone.style.color = 'black';
+    undone.style.color = 'rgb(82, 82, 82)';
     undone.style.fontWeight = 'normal';
-    done.style.color = 'black';
+    done.style.color = 'rgb(82, 82, 82)';
     done.style.fontWeight = 'normal';
 
     for (let i = 0; i < row.length; i++) {
@@ -240,9 +240,9 @@ function onUndone() {
     const row = document.querySelectorAll('.items__row');
     undone.style.color = 'rgb(224,168,210)';
     undone.style.fontWeight = 'bold';
-    all.style.color = 'black';
+    all.style.color = 'rgb(82, 82, 82)';
     all.style.fontWeight = 'normal';
-    done.style.color = 'black';
+    done.style.color = 'rgb(82, 82, 82)';
     done.style.fontWeight = 'normal';
 
     for (let i = 0; i < check.length; i++) {
@@ -260,9 +260,9 @@ function onDone() {
     const row = document.querySelectorAll('.items__row');
     done.style.color = 'rgb(224,168,210)';
     done.style.fontWeight = 'bold';
-    all.style.color = 'black';
+    all.style.color = 'rgb(82, 82, 82)';
     all.style.fontWeight = 'normal';
-    undone.style.color = 'black';
+    undone.style.color = 'rgb(82, 82, 82)';
     undone.style.fontWeight = 'normal';
 
     for (let i = 0; i < check.length; i++) {
@@ -420,7 +420,7 @@ delBtn.addEventListener('click', () => {
         clearBtn.className = 'footer__button-clear'
         input.readOnly = false;
         input.value = '';
-        input.style.color = 'black';
+        input.style.color = 'rgb(82, 82, 82)';
         input.style.fontSize = '24px';
         input.focus();
     }
