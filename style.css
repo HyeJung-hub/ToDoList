@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+button {
+    outline: none;
+    background: transparent;
+    border: none;
+}
+
+body {
+    background-color: #ced3df;
+    text-align: center;
+}
+
+.list {
+    width: 400px;
+    margin: 50px auto;
+    background-color: #f1f0f7;
+    border-radius: 20px;
+    box-shadow: 8px 7px 20px 0px rgba(0,0,0,0.37);
+    -webkit-box-shadow: 8px 7px 20px 0px rgba(0,0,0,0.37);
+    -moz-box-shadow: 8px 7px 20px 0px rgba(0,0,0,0.37);
+}
+
+.header {
+    height: 48px;
+    padding: 8px;
+    font-size: 24px;
+    border-radius: 20px 20px 0 0;
+    background: rgb(224,168,210);
+    background: linear-gradient(156deg, rgba(224,168,210,1) 31%, rgba(134,201,214,1) 72%);
+    color: whitesmoke;
+}
+
+.sel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    margin-top: 5px;
+}
+
+.done {
+    display: flex;
+    margin: 0 0 0 20px;
+}
+
+.all {
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: rgb(224,168,210);
+    font-weight: bold;
+}
+
+.undone,
+.done__done {
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.select {
+    max-width: 340px;
+    margin: 5px auto;
+    height: 30px;
+    line-height: 30px;
+    text-align: end;
+    margin-right: 30px;
+}
+
+
+.select__modify {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 100ms ease;
+}
+
+.select__un,
+.select__del {
+    margin-left: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 100ms ease;
+    display: none;
+}
+
+.select__un:hover,
+.select__del:hover,
+.select__modify:hover {
+    color: rgb(253, 93, 93);
+    transform: scale(1.05);
+}
+
+.items {
+    margin-top: 0;
+    height: 500px;
+    overflow-y: auto;
+}
+
+.item {
+    max-width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 32px;
+}
+
+.item__name {
+    display: block;
+    max-width: 250px;
+    word-wrap: break-word;
+    text-align: start;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 100ms ease;
+}
+
+.item__name:hover {
+    color: rgb(253, 93, 93);
+    transform: scale(1.05);
+}
+
+.btnBundle {
+    display: flex;
+    align-items: center;
+}
+
+.item__check,
+.item__delete {
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 16px;
+    transition: all 100ms ease-in;
+}
+
+.item__check:hover,
+.item__delete:hover {
+    color: rgb(253, 93, 93);
+    transform: scale(1.1);
+}
+
+.item__checkBox {
+    margin: 0 0 0 10px;
+    display: none;
+}
+
+.item__divider {
+    margin: auto;
+    width: 90%;
+    height: 1px;
+    background-color: lightgray;
+}
+
+.footer {
+    border-radius: 0 0 20px 20px;
+    background: rgb(224,168,210);
+    background: linear-gradient(156deg, rgba(224,168,210,1) 31%, rgba(134,201,214,1) 72%);
+}
+
+.footer__input {
+    width: 100%;
+    height: 32px;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    padding: 0 16px;
+}
+
+.footer__input:focus {
+    border: 2px solid rgba(224, 168, 210, 0.562);
+    border-radius: 4px;
+}
+
+.btn {
+    position: relative;
+}
+
+.footer__button {
+    cursor: pointer;
+    margin: 10px;
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.438);
+    border-radius: 50%;
+    color: rgb(51, 51, 51);
+    transition: transform 100ms ease-in;
+}
+
+
+.footer__button:hover {
+    box-shadow: 8px 7px 20px 0px rgba(0,0,0,0.22);
+    -webkit-box-shadow: 8px 7px 20px 0px rgba(0,0,0,0.22);
+    -moz-box-shadow: 8px 7px 20px 0px rgba(0,0,0,0.22);
+    transform: scale(1.1);
+}
+
+.footer__button-clear {
+    position: absolute;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.438);
+    border-radius: 15px;
+    /* background: transparent; */
+    color: #838383c2;
+
+    font-size: 20px;
+    right: 20px;
+    top: 18px;
+    transition: transform 100ms ease;
+}
+
+.footer__button-clear:hover {
+    box-shadow: 8px 7px 20px 0px rgba(0,0,0,0.22);
+    -webkit-box-shadow: 8px 7px 20px 0px rgba(0,0,0,0.22);
+    -moz-box-shadow: 8px 7px 20px 0px rgba(0,0,0,0.22);
+    color: #838383;
+    transform: scale(1.05);
+}
